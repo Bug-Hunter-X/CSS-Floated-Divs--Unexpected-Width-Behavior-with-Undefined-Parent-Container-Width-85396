@@ -1,0 +1,26 @@
+To fix this issue, ensure that the parent container has a defined width. This can be done by setting a fixed width (e.g., `width: 1000px;`), a percentage width (e.g., `width: 100%;`), or using other layout techniques such as flexbox or grid.
+
+Here's an example using a percentage width for the parent container:
+
+```css
+.container {
+  width: 100%;
+}
+div {
+  width: 50%;
+  float: left;
+  box-sizing: border-box; /*This ensures that padding and border are included in the element's total width and height*/
+}
+```
+
+Using flexbox:
+
+```css
+.container {
+  display: flex;
+}
+div {
+  width: 50%;
+  box-sizing: border-box; /*This ensures that padding and border are included in the element's total width and height*/
+}
+```
