@@ -1,0 +1,10 @@
+The following CSS code results in unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue is that if the parent container does not have a defined width, the floated divs might not behave as expected and may not occupy exactly 50% of the available space.
